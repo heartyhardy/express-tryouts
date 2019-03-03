@@ -1,0 +1,82 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+main {
+    padding: 1rem;
+}
+
+.main-header {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+    background-color: #ffbc02;
+}
+
+.main-header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__item-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header__item {
+    padding: 0;
+    margin: 0 1rem;
+}
+
+.main-header__item a {
+    color: black;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+    color: #6700bb;
+}
+
+.form-product {
+    margin: auto;
+    width: 20rem;
+    max-width: 90%;
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+}
+
+.form-control input {
+    font: inherit;
+    border: 1px solid #ffbc02;
+    border-radius: 2px;
+}
+
+button {
+    color: #6700bb;
+    border: 1px solid #6700bb;
+    border-radius: 3px;
+    font: inherit;
+    background: white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover,
+button:active {
+    background: #6700bb;
+    color: white;
+}

@@ -9,7 +9,8 @@ const root_route = require('./routes/shop');
 
 const app = express();
 
-app.use(parser.json());
+app.use(express.static(path.join(rootdir,"public")));
+app.use(parser.urlencoded({extended:false}));
 app.use('/admin', admin_route); //Used a filter = '/admin' here
 app.use(root_route);
 
