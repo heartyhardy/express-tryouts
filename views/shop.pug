@@ -1,0 +1,22 @@
+extends layouts/main-layout.pug
+
+block styles
+    link(rel="stylesheet", href="/css/shop.css")
+
+block contents
+    main
+        if products.length > 0
+            .grid
+                each item in products
+                    article.card
+                        header.product__header
+                            h1 #{item.productname}
+                        .card-image
+                            img(src="https://www.vegetables.co.nz/assets/recipes/_resampled/FillWyI0MDAiLCIzMDAiXQ/cooking-globe-artichokes.jpg" alt="Artichokes" class="product-img")
+                        .card-content
+                            h2.product__price $5.00
+                            p1.product__description Globe artichokes are easy to cook and delicious. Pull the petals off the cooked artichokes and dip the flesh end in vinaigrette and enjoy!
+                        .card-actions
+                            button.btn Add to cart
+        else
+            h1 store is empty!
